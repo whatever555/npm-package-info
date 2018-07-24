@@ -4,6 +4,8 @@ npm package info
   
 ## How to use 
 Place cursor over a package name in your package.json file and press <leader>N  
+Plugin will display some info about the package. 
+Info includes latest version, weekly installs, latest release date...
     
   
   
