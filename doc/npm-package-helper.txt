@@ -1,0 +1,6 @@
+======================
+** npm package info **
+=====================
+*How to use*
+Place cursor over a package name in your package.json file and press <leader>N  
+

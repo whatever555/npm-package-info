@@ -12,4 +12,3 @@
 :endfunction
 
 :autocmd FileType json nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
-
