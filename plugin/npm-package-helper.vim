@@ -12,3 +12,4 @@
 :endfunction
 
 :autocmd FileType json nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
+:command! PackageInfo call PackageInfoHelper()
