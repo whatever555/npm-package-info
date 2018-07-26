@@ -11,5 +11,4 @@
 : unlet l:vals
 :endfunction
 
-:nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
 :command! PackageInfo call PackageInfoHelper()
