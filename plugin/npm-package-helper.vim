@@ -11,5 +11,5 @@
 : unlet l:vals
 :endfunction
 
-:autocmd FileType json nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
+:nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
 :command! PackageInfo call PackageInfoHelper()
