@@ -11,7 +11,15 @@ Place cursor over a package name your package.json file and call `:PackageInfo`
 Or just  `<leader>N`  
 Plugin will display some info about the package. 
 Info includes latest version, latest release date etc...
-    
+  
+## Mapping examples  
+To map `<leader>N` to `:PackageInfo` add the following to your `.vimrc` file:  
+:nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
+   
+     
+To only allow it to run in package.json files:  
+:autocmd FileType json nnoremap <buffer> <leader>N :call PackageInfoHelper()<CR>
+
   
   
 ## Screenshots  
