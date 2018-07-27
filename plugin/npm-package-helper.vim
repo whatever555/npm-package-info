@@ -1,7 +1,14 @@
 :function! PackageInfoHelper()
 : execute "normal! y"
 : execute "normal! vi\"y"
-: let l:urlCommand="curl -s \"https://imaga.me/npm/?p=".(PackageNameFix(getreg('"')))."\""
+: let l:pname = getreg('"')
+: if !l:pname
+    : execute "normal! y"
+    : execute "normal! vi'y"
+    : let l:pname = getreg('"')
+: endif
+: let l:urlCommand="curl -s \"https://imaga.me/npm/?p=".(PackageNameFix(l:pname))."\""
+: unlet l:pname
 : echo "Getting info for " . getreg('"'). ". Please wait while we get your package!" 
 : echo ""
 : let l:vals = split(system(l:urlCommand), "||")
