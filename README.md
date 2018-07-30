@@ -8,7 +8,7 @@ Install using Vundle:
   
 ## Usage 
 Place cursor over a package name your package.json file and call `:PackageInfo`   
-Or just  `<leader>N`  
+
 Plugin will display some info about the package. 
 Info includes latest version, latest release date etc...
   
