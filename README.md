@@ -19,9 +19,10 @@ To map `<leader>N` to `:PackageInfo` add the following to your `.vimrc` file:
 ```
    
      
-To only allow it to run in package.json files:  
+To only allow it run in json files:  
+```
 :autocmd FileType json nnoremap <leader>N :PackageInfo<CR>
-
+```
   
   
 ## Screenshots  
