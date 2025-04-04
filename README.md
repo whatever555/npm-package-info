@@ -1,4 +1,4 @@
-# PackageInfo.vim 📦
+# npm-package-info.vim 📦
 
 A Vim plugin to fetch and display information about npm packages directly from your editor! 🚀
 
