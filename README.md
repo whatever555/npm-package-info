@@ -81,10 +81,9 @@ You can add the following keybinding to your `~/.vimrc` to make it even easier t
 
 ```vim
 nnoremap <leader>pi :PackageInfo<CR>
-     
+```
+
 To only allow it run in json files:  
 ```
 :autocmd FileType json nnoremap <leader>N :PackageInfo<CR>
 ```
-  
-  
