@@ -66,24 +66,25 @@ This plugin helps you quickly retrieve details like description, version, mainta
 
 ## Usage 🚀
 
-1.  Place your over over the package you would like the information for
-2.  In Vim, run the command:
+0.  Open a `package.json` file in Vim.
+1.  Place your cursor over your package of interest.
+2.  Run the command
 
     ```vim
     :PackageInfo
     ```
 
-    This will fetch and display the package information in the Vim command line.
+    to display its information in the Vim command line.
 
 ## Customization ⚙️
 
-You can add the following keybinding to your `~/.vimrc` to make it even easier to use:
+Add the following keybindings to your `~/.vim/ftplugin/json.vim` for ease of use:
 
 ```vim
-nnoremap <leader>pi :PackageInfo<CR>
+if exists(':PackageInfo') == 2
+    nnoremap <buffer> <silent> <F1> :PackageInfo<CR>
+    nnoremap <buffer> <silent> <C-F1> :<c-u>Open https://www.npmjs.com/package/<c-r><c-f>?activeTab=versions<CR>
+endif
 ```
 
-To only allow it run in json files:  
-```
-:autocmd FileType json nnoremap <leader>N :PackageInfo<CR>
-```
+The latter mapping shows all its versions in your default browser.
