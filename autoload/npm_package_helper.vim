@@ -1,4 +1,4 @@
-function! PackageInfoHelper()
+function! npm_package_helper#PackageInfoHelper()
 : execute "normal! y"
 : execute "normal! vi\"y"
 : let l:pname = getreg('"')
@@ -92,5 +92,3 @@ function! PackageInfoHelper()
 : unlet l:urlCommand
 : unlet l:vals
 :endfunction
-
-:command! PackageInfo call PackageInfoHelper()
